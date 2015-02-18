@@ -12,6 +12,14 @@ renderProfile= (profile) ->
     css: css,
     profile: profile
 
+renderPortfolio= (portfolio) ->
+  css = fs.readFileSync(__dirname + "/style.css", "utf-8")
+  template = fs.readFileSync(__dirname + "/portfolio.template", "utf-8")
+  Handlebars.compile(template)
+    css: css,
+    portfolio: portfolio
+
 module.exports =
   renderProfile: renderProfile
+  renderPortfolio: renderPortfolio
 

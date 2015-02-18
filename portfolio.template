@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+  <title>{{portfolio.name}}</title>
+
+  <link href="https:///maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    {{{css}}}
+  </style>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="theme theme-dius">
+        <div class="container portfolio-container">
+
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="visible-print pull-right">DiUS Computing Pty. Ltd.</p>
+                <a class="logo hidden-print" href="http://dius.com.au" target="_blank" alt="DiUS Computing Pty. Ltd."></a>
+              </div>
+            </div>
+          </header>
+
+          {{#if portfolio.name }}
+          <div class="row">
+            <div class="col-md-12">
+              <h2>{{portfolio.name}}</h2>
+            </div>
+          </div>
+          {{/if}}
+
+          {{#if portfolio.comment }}
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <p>{{portfolio.comment}}</p>
+            </div>
+          </div>
+          {{/if}}
+
+
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Team members:</h3>
+              <div style="position: relative;">
+                <div class="profiles">
+                  <div class="row">
+                    {{#each portfolio.snapshots}}
+                    <div class="profile-col-default">
+                      <a href="http://people.dius.com.au/p/zoran.angelovski/F6x72y-x4ZoABgWHHwNf">
+                        <div class="profile">
+                          <div class="profile-header">
+                            <div class="image-wrapper">
+                              <img src="{{this.profile.photo_url}}">
+                            </div>
+                          </div>
+
+                          <div class="profile-content">
+                            <h4>{{this.profile.name}}</h4>
+                            <h5>{{this.profile.title}}</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Contact details:</h3>
+              <div style="position: relative;">
+                <dl class="dl-horizontal">
+                  <dt>Name</dt>
+                  <dd>Marc Phoa - Client Engagement Manager</dd>
+                  <dt>Phone</dt>
+                  <dd>0412 146 699</dd>
+                  <dt>Email</dt>
+                  <dd>mphoa@dius.com.au</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+
+        <footer>
+          <div class="row">
+            <div class="col-md-12">
+            </div>
+          </div>
+        </footer>
+
+
+      </div>
+    </div>
+  </body>
+</html>
+

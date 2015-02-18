@@ -1082,3 +1082,14 @@ h5, .h5 {
 h6, .h6 {
     font-size: 14px
 }
+
+h4 {
+    font-size: 1.25em;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+h5 {
+    margin: 2px 0 15px;
+}
