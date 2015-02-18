@@ -7,114 +7,151 @@
   <title>{{profile.name}}</title>
 
   <link href="https:///maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
   <style type="text/css">
     {{{css}}}
   </style>
   </head>
   <body>
+
     <div class="container-fluid">
-
-      <header class="row">
-        <h2 class="name">{{profile.about.name}}</h2>
-
-        <p class="title">{{profile.about.title}}</p>
-        {{#if profile.about.passion }}
-          <p class="passion well well-sm">{{profile.about.passion}}</p>
-        {{/if}}
-      </header>
-
-      <div class="row">
-        <div class="col-md-offset-2 col-md-3">
-          <div class="photo">
-            <img width="300" height="300" src="{{profile.about.photo_url}}">
-          </div>
-        </div>
-        <div class="col-md-5 bio">
-          {{#if profile.about.bio }}
-          <div class="bio">
-            <p>{{profile.about.bio}}</p>
-          </div>
-          {{/if}}
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-offset-2 col-md-9">
-          <div class="skills">
-            <ul class="list-inline well well-sm">
-              {{#each profile.skills}}
-                <li>{{this.name}}</li>
-              {{/each}}
-            </ul>
-          </div>
-
-          <hr>
-        </div>
-      </div>
-
-      {{#if profile.experiences}}
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <section class="experiences">
-            <h3>Selected experience</h3>
-
-            {{#each profile.experiences}}
-              <div class="row">
-                <div class="col-md-offset-1 col-md-10">
-                  <h4><p>{{this.place}}</p></h4>
-                  <h5>{{this.role}}</h5>
-                  <p>{{this.period}}</p>
-                  <span>{{{md this.description}}}</span>
+      <div class="theme theme-dius">
+        <div class="container">
+          <header>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="visible-print pull-right">DiUS Computing Pty. Ltd.</p>
+              </div>
+            </div>
+          </header>
+          <div class="row">
+            <div class="col-md-4">
+              <div>
+                <div class="hero-image">
+                    <img width="300" height="300" src="{{profile.about.photo_url}}">
                 </div>
               </div>
-
-              <hr class="divider">
-            {{/each}}
-          </section>
-        </div>
-      </div>
-      {{/if}}
-
-      {{#if profile.education_and_trainings}}
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <section class="education">
-            <h3>Education and Training</h3>
-
-            {{#each profile.education_and_trainings}}
-              <div class="row">
-                <div class="col-md-offset-1 col-md-10">
-                  <h4><p>{{this.place}}</p></h4>
-                  <h5>{{this.period}}</h5>
-                  <span><p>{{this.description}}</p></span>
+            </div>
+            <div class="col-md-8">
+              <div class="big">{{profile.about.name}}</div>
+              <div>
+                <p class="biggish">
+                  {{profile.about.title}}
+                </p>
+              </div>
+              {{#if profile.about.bio }}
+              <div class="hero-text">
+                <div>
+                  {{{md profile.about.bio}}}
                 </div>
               </div>
-
-              <hr class="divider">
-            {{/each}}
-          </section>
-        </div>
-      </div>
-      {{/if}}
-
-      {{#if profile.presence}}
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8">
-          <section class="links">
-            <h3>Links</h3>
-
-              <div class="row">
-                <div class="col-md-offset-1 col-md-10">
-                  {{#each profile.presence}}
-                    <h4><a href="{{this.url}}">{{this.type}}</a></h4>
+              {{/if}}
+              <div class="skills">
+                <section class="skills">
+                  <h3>
+                    Core expertise
+                  </h3>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="list-inline well well-sm">
+                        {{#each profile.skills}}
+                        <li>
+                          <span>{{this.name}}</span>
+                        </li>
+                        {{/each}}
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            {{#if profile.experiences}}
+            <div class="col-md-8">
+              <section class="experiences">
+                <h3>
+                  Selected experience
+                </h3>
+                <div class="experiences">
+                  {{#each profile.experiences}}
+                  <div class="well well-sm">
+                    <div class="row">
+                      <div class="col-md-12" style="position: relative;">
+                        <h4>{{{md this.place}}}</h4>
+                        <h5>{{{md this.role}}}</h5>
+                        <p>{{this.period}}</p>
+                        <span>{{{md this.description}}}</span>
+                      </div>
+                    </div>
+                  </div>
+                  {{#unless @last}}
+                    <hr class="divider">
+                  {{/unless}}
                   {{/each}}
                 </div>
+              </section>
+            </div>
+            {{/if}}
+            <div class="col-md-4">
+              {{#if profile.about.passion }}
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="passion">
+                    <h3>Passionate about</h3>
+                    <div class="row">
+                      <div class="col-md-12">
+                        {{{md profile.about.passion}}}
+                      </div>
+                    </div>
+                  </section>
+                </div>
               </div>
-          </section>
+              {{/if}}
+              {{#if profile.education_and_trainings}}
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="eduction">
+                    <h3>
+                      Education and Training
+                    </h3>
+                    {{#each profile.education_and_trainings}}
+                    <div class="well well-sm">
+                      <div>
+                        <p>{{this.period}} {{this.place}}</p>
+                        <p>{{this.description}}</p>
+                      </div>
+                    </div>
+                    {{#unless @last}}
+                      <hr class="divider">
+                    {{/unless}}
+                    {{/each}}
+                  </section>
+                </div>
+              </div>
+              {{/if}}
+            </div>
+          </div>
+          <footer>
+            <div class="row">
+              <div class="col-md-12">
+                {{#if profile.presence}}
+                  <ul class="links list-inline">
+                    {{#each profile.presence}}
+                    <li style="position: relative">
+                      <a class="pull-left" href="{{this.url}}" title="{{this.title}}" target="_blank">
+                        <i style="font-size: 32px; padding: 0 5px" class="fa fa-{{this.type}}"></i>
+                      </a>
+                    </li>
+                    {{/each}}
+                  </ul>
+                {{/if}}
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
-      {{/if}}
     </div>
   </body>
 </html>
