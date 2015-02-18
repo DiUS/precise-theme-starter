@@ -82,11 +82,11 @@
               <div style="position: relative;">
                 <dl class="dl-horizontal">
                   <dt>Name</dt>
-                  <dd>Marc Phoa - Client Engagement Manager</dd>
+                  <dd>{{portfolio.contact.name}}</dd>
                   <dt>Phone</dt>
-                  <dd>0412 146 699</dd>
+                  <dd>{{portfolio.contact.number}}</dd>
                   <dt>Email</dt>
-                  <dd>mphoa@dius.com.au</dd>
+                  <dd>{{portfolio.contact.email}}</dd>
                 </dl>
               </div>
             </div>

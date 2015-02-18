@@ -1,4 +1,10 @@
-{"id": "1abedb4", "name": "DiUS Team - Hospira ClopineCentral", "comment": null, "authentication_token": "GxmDfWbuhkFkfZpve7Tp", "created_by": "Marc Phoa", "created_at": "2014-07-22T08:12:08.706Z", "theme": "dius", "org_id": "DiUS", "share_domain": "people.dius.com.au", "contact": {
+{
+  "id": "1abedb4",
+  "name": "DiUS Team - Hospira ClopineCentral",
+  "comment": null, "authentication_token": "GxmDfWbuhkFkfZpve7Tp",
+  "created_by": "Marc Phoa", "created_at": "2014-07-22T08:12:08.706Z",
+  "theme": "dius", "org_id": "DiUS", "share_domain": "people.dius.com.au",
+  "contact": {
   "name": "Marc Phoa - Client Engagement Manager",
   "number": "0412 146 699",
   "email": "mphoa@dius.com.au"
