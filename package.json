@@ -1,10 +1,10 @@
 {
-  "name": "precise-theme-starter",
+  "name": "dius-precise-theme",
   "version": "0.0.2",
-  "description": "Example of how to theme a Precise Profile and Portfolio. Use it as a starter for your own company branding",
+  "description": "DiUS branding for Precise Profiles and Portfolios",
   "repository": {
     "type": "git",
-    "url": "git@github.com:srbartlett/precise-theme-starter.git"
+    "url": "git@github.com:DiUS/dius-precise-theme.git"
   },
   "dependencies": {
     "handlebars": "~2.0.0",
