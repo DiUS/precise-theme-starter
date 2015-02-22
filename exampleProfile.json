@@ -30,7 +30,7 @@
       "name": "Go to Market"
     }
   ],
-  "experiences": [
+  "experience": [
     {
       "place": "Qantas",
       "period": "Oct 2014 - Current",
@@ -50,7 +50,7 @@
       "role": "UX Consultant"
     }
   ],
-  "education_and_trainings": [
+  "education": [
     {
       "place": "University of Design",
       "period": "2006",
@@ -62,7 +62,7 @@
       "description": "Bachelor of Arts 2005"
     }
   ],
-  "presence": [
+  "network": [
     {
       "type": "github",
       "username": "example",

@@ -68,14 +68,14 @@
             </div>
           </div>
           <div class="row">
-            {{#if profile.experiences}}
+            {{#if profile.experience}}
             <div class="col-md-8">
               <section class="experiences">
                 <h3>
                   Selected experience
                 </h3>
                 <div class="experiences">
-                  {{#each profile.experiences}}
+                  {{#each profile.experience}}
                   <div class="well well-sm">
                     <div class="row">
                       <div class="col-md-12" style="position: relative;">
@@ -109,14 +109,14 @@
                 </div>
               </div>
               {{/if}}
-              {{#if profile.education_and_trainings}}
+              {{#if profile.education}}
               <div class="row">
                 <div class="col-md-12">
                   <section class="eduction">
                     <h3>
                       Education and Training
                     </h3>
-                    {{#each profile.education_and_trainings}}
+                    {{#each profile.education}}
                     <div class="well well-sm">
                       <div>
                         <p>{{this.period}} {{this.place}}</p>
@@ -136,9 +136,9 @@
           <footer>
             <div class="row">
               <div class="col-md-12">
-                {{#if profile.presence}}
+                {{#if profile.network}}
                   <ul class="links list-inline">
-                    {{#each profile.presence}}
+                    {{#each profile.network}}
                     <li style="position: relative">
                       <a class="pull-left" href="{{this.url}}" title="{{this.title}}" target="_blank">
                         <i style="font-size: 32px; padding: 0 5px" class="fa fa-{{this.type}}"></i>
