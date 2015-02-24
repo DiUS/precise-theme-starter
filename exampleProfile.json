@@ -79,5 +79,7 @@
       "url": "hello@example.com"
     }
   ],
-  "created_at": "2015-01-21T22:50:23.903Z"
+  "links": {
+    "pdf": "http://pdf.example.com/profile/123"
+  }
 }

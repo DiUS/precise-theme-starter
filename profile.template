@@ -150,6 +150,13 @@
               </div>
             </div>
           </footer>
+          <p class="download">
+            <sub class="pull-right">
+              <a href="{{profile.links.pdf}}">Download Printable Version</a>
+              |
+              Confidential profile of {{profile.about.name}}
+            </sub>
+          </p>
         </div>
       </div>
     </div>
