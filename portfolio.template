@@ -54,17 +54,17 @@
                   <div class="row">
                     {{#each portfolio.snapshots}}
                     <div class="profile-col-default">
-                      <a href="http://people.dius.com.au/p/zoran.angelovski/F6x72y-x4ZoABgWHHwNf">
+                      <a href="///{{domain}}{{path}}" target="_parent">
                         <div class="profile">
                           <div class="profile-header">
                             <div class="image-wrapper">
-                              <img src="{{this.profile.photo_url}}">
+                              <img src="{{this.profile.about.photo_url}}">
                             </div>
                           </div>
 
                           <div class="profile-content">
-                            <h4>{{this.profile.name}}</h4>
-                            <h5>{{this.profile.title}}</h5>
+                            <h4>{{this.profile.about.name}}</h4>
+                            <h5>{{this.profile.about.title}}</h5>
                           </div>
                         </div>
                       </a>
