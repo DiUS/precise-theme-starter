@@ -1,18 +1,7 @@
-# Precise Theme Starter
+# DiUS Precise Theme
 
-This is an example of how to create a theme for [Precise](http://precise.io) Portfolios and Profiles.
-Consider it a starter pack.  Use it a guide for your own theme.
-
-## So you want to theme a Portfolio or Profile
-
-Great!  Here's how you do it:
-
-1. Copy or Fork this repository
-2. Install development dependencies
-3. Run the development server
-4. Create your desired HTML markup and CSS
-5. Package as a NPM
-6. Deploy
+This is a theme for [Precise](http://precise.io) Portfolios and Profiles.
+It provides the styling and layout for DiUS consultant profiles.
 
 ### Getting your development environment setup
 
@@ -24,11 +13,17 @@ After cloning this repository, you need to install:
 
 With that done:
 
-1. Change to the directory your copied this repository.
-2. Install project depenencies using `npm install`
-3. Run the developer server with `grunt`
+1. Install project depenencies using `npm install`
+2. Run the developer server with `grunt`
 
-Open http://localhost:9001/profile in your browser. You should see a Profile with default styling.
+
+**Develop Profile**
+
+Open http://localhost:9001/profile in your browser.
+
+**Develop Portfolio**
+
+Open http://localhost:9001/portfolio in your browser.
 
 ## Make it look good
 
@@ -57,18 +52,26 @@ can use from favourite templating language or stick with the one we used -- Hand
 
 * `style.css`:  All your CSS.
 
-Also worthy of a mention is the test Profile and Portfolio JSON located in
-the `./test` directory.  You can modify the JSON to suit your needs.  It's only
-used during development.
+Also worthy of a mention is the example Profile and Portfolio JSON. `exampleProfile.json`
+and `examplePortfolio.json`.  These files provide example data during development. You
+can modify to suit your needs but you must ensure they conform to the Precise
+schema.
 
 ## Deployment
 
-When you are done with **making it look good** it's time to deploy:
+When you are done with **making it look good** it's time to deploy. This command
+will run all the steps necessary to create a release, including tagging, creating
+an artefact and releasing it on Github.
 
-1. Check you have updated `package.json` especially incrementing the version number.
-2. Run `npm pack`. This create a local NPM package as a tar ball.
-3. Login to [Precise](http://precise.io) and open the Manage Theme page.
-4. Upload your new NPM package.
+    $ grunt release
+
+Once released:
+
+1. Download the release to your local machine.
+2. Login to [Precise](http://precise.io)
+3. Open the theme page /theme
+4. Upload your new release from your local machine.
 5. After a short pause the theme should be available to preview or select.
 6. Preview the theme to ensure all is well before making permanent.
 7. Rinse and repeat as required.
+
