@@ -67,7 +67,8 @@ an artefact and releasing it on Github.
 
 1. Bump the version in your package.json file.
 2. Stage the package.json change.
-3. Commit that change with a message like "release 0.5"
+3. Commit that change with a message like "release 0.1.5"
+4. Git tag ```git tag -a 0.1.5 -m 'release 0.1.5'```
 4. Push the change to git
 5. Package into tarball using
 
