@@ -22,17 +22,10 @@ module.exports = function(grunt) {
           spawn: false
         }
       }
-    },
-
-    release: {
-      options: {
-        npm: false
-      }
-    },
+    }
   });
 
   grunt.loadNpmTasks('grunt-express');
-  grunt.loadNpmTasks('grunt-release');
 
   // Default task.
   grunt.registerTask('default', ['express', 'express-keepalive']);

@@ -11,11 +11,15 @@
     "coffee-script": "^1.7.1",
     "node-markdown": "*"
   },
+  "bundledDependencies": [
+    "coffee-script",
+    "handlebars",
+    "node-markdown"
+  ],
   "devDependencies": {
     "express": "^4.11.2",
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-express": "^1.4.1",
-    "grunt-release": "^0.11.0"
+    "grunt-express": "^1.4.1"
   }
 }

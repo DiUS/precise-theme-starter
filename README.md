@@ -35,8 +35,10 @@ It's pretty simple:
 
 * `package.json`: This file describes your NPM package.  The most important fields
 and the `name` and `version`. If you have any dependencies such as a template engine
-include them in the `dependencies` field.  As with any software package you must
-bump the version on every release.
+include them in the `dependencies` field. **Note** We recommend using
+``bundledDependencies``.  This removes the need to installed dependencies from
+NPM at runtime resulting in faster install and no downtime should NPM go down.
+As with any software package you must bump the version on every release.
 
 * `index.coffee`: We're using Coffeescript. If you prefer Javascript rename
 this file to `index.js`.  This file is really important.  It's the glue between
@@ -63,15 +65,20 @@ When you are done with **making it look good** it's time to deploy. This command
 will run all the steps necessary to create a release, including tagging, creating
 an artefact and releasing it on Github.
 
-    $ grunt release
+1. Bump the version in your package.json file.
+2. Stage the package.json change.
+3. Commit that change with a message like "release 0.5"
+4. Push the change to git
+5. Package into tarball using
 
-Once released:
+    $ npm pack
 
-1. Download the release to your local machine.
-2. Login to [Precise](http://precise.io)
-3. Open the theme page /theme
-4. Upload your new release from your local machine.
-5. After a short pause the theme should be available to preview or select.
-6. Preview the theme to ensure all is well before making permanent.
-7. Rinse and repeat as required.
+Once packaged:
+
+1. Login to [Precise](http://precise.io)
+2. Open the theme page /theme
+3. Upload your new release from your local machine.
+4. After a short pause the theme should be available to preview or select.
+5. Preview the theme to ensure all is well before making permanent.
+6. Rinse and repeat as required.
 
