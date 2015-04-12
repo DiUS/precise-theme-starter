@@ -59,11 +59,24 @@ and `examplePortfolio.json`.  These files provide example data during developmen
 can modify to suit your needs but you must ensure they conform to the Precise
 schema.
 
+### Images
+
+You may want to include images in the theme you are developing. There are two options:
+
+1. **Reference assets from an external URL.** You may have these images already hosted elsewhere. Simply reference them via their HTTP URL.
+```
+<img src="http://external.com/images/example/png" />
+```
+2. **Use Base64 encoding in CSS.** You can embed images directly into your CSS. Note that there are some [limitations](http://css-tricks.com/data-uris/) to using this approach.
+```
+.image {
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...);
+}
+```
+
 ## Deployment
 
-When you are done with **making it look good** it's time to deploy. This command
-will run all the steps necessary to create a release, including tagging, creating
-an artefact and releasing it on Github.
+When you are done with **making it look good** it's time to deploy:
 
 1. Bump the version in your package.json file.
 2. Stage the package.json change.
