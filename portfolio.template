@@ -54,7 +54,7 @@
                   <div class="row">
                     {{#each portfolio.snapshots}}
                     <div class="profile-col-default">
-                      <a href="///{{domain}}{{path}}" target="_parent">
+                      <a href="http://{{domain}}{{path}}" target="_parent">
                         <div class="profile">
                           <div class="profile-header">
                             <div class="image-wrapper">
