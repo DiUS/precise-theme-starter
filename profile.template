@@ -6,7 +6,7 @@
 
   <title>{{profile.name}}</title>
 
-  <link href="https:///maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://static.precise.io/precise-theme-starter/assets/plugins/bootstrap/css/bootstrap-no-print.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
   <style type="text/css">
@@ -19,11 +19,6 @@
       <div class="theme theme-dius">
         <div class="container">
           <header>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="visible-print pull-right">DiUS Computing Pty. Ltd.</p>
-              </div>
-            </div>
           </header>
           <div class="row">
             <div class="col-md-4">
