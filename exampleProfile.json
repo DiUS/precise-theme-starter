@@ -7,6 +7,11 @@
     "updated_at": "2015-01-30T03:33:57.750Z",
     "photo_url": "http://api.randomuser.me/portraits/women/54.jpg"
   },
+  "certifications": [{
+    "name": "AWS IoT Certificate",
+    "period": "02/02/2020",
+    "place": "AWS Melbourne"
+  }],
   "skills": [
     {
       "name": "Branding"
