@@ -126,6 +126,33 @@
                 </div>
               </div>
               {{/if}}
+
+              {{#if profile.certifications }}
+                <div class="row">
+                  <div class="col-md-12">
+                    <section class="certifications">
+                      <h3>
+                        Certifications
+                      </h3>
+                      {{#each profile.certifications}}
+                      <div class="well well-sm">
+                        <div>
+                          <p class="certification">
+                            <span class="name">{{this.name}}</span>
+                            {{#if this.period}} <span>({{this.period}})</span> {{/if}}
+                            <span>{{this.place}}</span>
+                          </p>
+                        </div>
+                      </div>
+                      {{#unless @last}}
+                        <hr class="divider">
+                      {{/unless}}
+                      {{/each}}
+                    </section>
+                  </div>
+                </div>
+              {{/if}}
+
             </div>
           </div>
           <footer>
