@@ -746,6 +746,10 @@ ul.unstyled .close {
     color: #fff
 }
 
+.theme-dius .certification > .name {
+    font-weight: 800;
+}
+
 .theme-dius ul.dropdown-menu li {
     background-color: #fff
 }
