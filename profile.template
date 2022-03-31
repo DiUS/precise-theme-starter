@@ -13,13 +13,14 @@
     {{{css}}}
   </style>
   </head>
-  <body>
 
+  <body>
     <div class="container-fluid">
       <div class="theme theme-dius">
         <div class="container">
-          <header>
-          </header>
+
+          <header></header>
+
           <div class="row">
             <div class="col-md-4">
               <div>
@@ -62,6 +63,7 @@
               </div>
             </div>
           </div>
+
           <div class="row">
             {{#if profile.experience}}
             <div class="col-md-8">
@@ -77,10 +79,22 @@
                         <h4>{{{md this.place}}}</h4>
                         <h5>{{{md this.role}}}</h5>
                         <p>{{this.period}}</p>
+                        {{#if this.description}}
                         <span>{{{md this.description}}}</span>
+                        {{/if}}
                       </div>
                     </div>
                   </div>
+                  {{#if this.projects}}
+                  {{#each this.projects}}
+                  <div class="row">
+                    <div class="col-md-12" style="position: relative;">
+                      <h6>{{this.title}} - {{this.period}}</h6>
+                      <span>{{{md this.description}}}</span>
+                    </div>
+                  </div>
+                  {{/each}}
+                  {{/if}}
                   {{#unless @last}}
                     <hr class="divider">
                   {{/unless}}
@@ -89,6 +103,7 @@
               </section>
             </div>
             {{/if}}
+
             <div class="col-md-4">
               {{#if profile.about.passion }}
               <div class="row">
@@ -104,6 +119,7 @@
                 </div>
               </div>
               {{/if}}
+
               {{#if profile.education}}
               <div class="row">
                 <div class="col-md-12">
@@ -155,6 +171,7 @@
 
             </div>
           </div>
+
           <footer>
             <div class="row">
               <div class="col-md-12">
@@ -172,6 +189,7 @@
               </div>
             </div>
           </footer>
+
           <p class="download">
             <sub class="pull-right">
               {{#if profile.links.pdf}}
@@ -181,6 +199,7 @@
               Confidential profile of {{profile.about.name}}
             </sub>
           </p>
+
         </div>
       </div>
     </div>

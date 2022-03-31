@@ -53,6 +53,22 @@
       "period": "Jan 2014 -  Jun 2014",
       "description": "Et aut voluptate earum omnis similique. Cumque necessitatibus facere reprehenderit nobis. Praesentium est nobis aut voluptatem dolorem quasi. Perferendis rerum architecto dolor minus cupiditate.",
       "role": "UX Consultant"
+    },
+    {
+      "place": "Multi-project client",
+      "role": "Lead kinda person",
+      "projects": [
+        {
+          "title": "Steve Service",
+          "description": "Et aut voluptate earum omnis similique. Cumque necessitatibus facere reprehenderit nobis. Praesentium est nobis aut voluptatem dolorem quasi. Perferendis rerum architecto dolor minus cupiditate.",
+          "period": "10 months"
+        },
+        {
+          "title": "Jemimanda Storage and Search",
+          "description": "Et aut voluptate earum omnis similique. Cumque necessitatibus facere reprehenderit nobis. Praesentium est nobis aut voluptatem dolorem quasi. Perferendis rerum architecto dolor minus cupiditate.",
+          "period": "7 months"
+        }
+      ]
     }
   ],
   "education": [
