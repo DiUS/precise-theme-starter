@@ -180,7 +180,7 @@
                     {{#each profile.network}}
                     <li style="position: relative">
                       <a class="pull-left" href="{{this.url}}" title="{{this.title}}" target="_blank">
-                        <i style="font-size: 32px; padding: 0 5px" class="fa fa-{{this.type}}"></i>
+                        <i style="font-size: 32px; padding: 0 5px" class="fa fa-{{logo this.type}}"></i>
                       </a>
                     </li>
                     {{/each}}
