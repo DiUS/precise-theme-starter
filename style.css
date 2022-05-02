@@ -1,34 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
-
-@font-face {
-    font-family: Lato-Hairline;
-    font-style: normal;
-    font-weight: 100;
-    src: local("Lato Hairline"), local("Lato-Hairline"), url(fonts/lato/8f1b2449.zJY4gsxBiSo5L7tNutxFNg.otf) format("opentype")
-}
-
-@font-face {
-    font-family: Lato-Light;
-    font-style: normal;
-    font-weight: 300;
-    src: local("Lato Light"), local("Lato-Light"), url(fonts/lato/df2bff07.nj47mAZe0mYUIySgfn0wpQ.otf) format("opentype")
-}
-
-@font-face {
-    font-family: Lato-Regular;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Lato Regular"), local("Lato-Regular"), url(fonts/lato/a1f38c0e.v0SdcGFAl2aezM9Vq_aFTQ.otf) format("opentype")
-}
-
-@font-face {
-    font-family: Lato-Bold;
-    font-style: normal;
-    font-weight: 700;
-    src: local("Lato Bold"), local("Lato-Bold"), url(fonts/lato/f379b943.DvlFBScY1r-FMtZSYIYoYw.otf) format("opentype")
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
 
 @media (max-width:767px) {
     h3, hr.slim {
@@ -66,32 +38,30 @@
 h1, h3 {
     line-height: 44px;
     text-transform: uppercase;
-    font-family: Lato-Light
-}
-
-h5 {
-    line-height: 23px;
-    text-transform: uppercase
+    font-family: Inter;
+    font-weight: 300;
 }
 
 h4 {
-    font-size: 1.25em;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 2px
 }
 
 h5 {
-    margin: 2px 0 15px
+    line-height: 23px;
+    text-transform: uppercase;
+    margin: 2px 0 15px;
 }
 
 h3 {
     margin: 0;
-    margin-bottom: 11px
+    margin-bottom: 11px;
 }
 
 b, strong {
-    font-family: Lato-Bold;
+    font-family: Inter;
+    font-weight: 700;
     font-size: 95%
 }
 
@@ -180,7 +150,8 @@ ul.list-selectable li .fa-check {
 }
 
 address {
-    font-family: Lato-Regular
+    font-family: Inter;
+    font-weight: 400;
 }
 
 .page-title {
@@ -337,13 +308,8 @@ ul li a.disabled {
 
 header {
     height: 70px;
-    position: relative
-}
-
-@media (min-width:768px) {
-    header {
-        margin-bottom: 20px
-    }
+    position: relative;
+    margin: 1.6rem;
 }
 
 footer {
@@ -436,7 +402,8 @@ footer a, .download a {
     text-shadow: none;
     text-transform: uppercase;
     padding: 7px 13px;
-    font-family: Lato-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
     border-radius: 4px
 }
 
@@ -569,11 +536,13 @@ ul.unstyled .close {
 }
 
 .logo .precise {
-    font-family: Lato-Light
+    font-family: Inter;
+    font-weight: 300;
 }
 
 .logo .profiles {
-    font-family: Lato-Hairline
+    font-family: Inter;
+    font-weight: 100;
 }
 
 .theme [ng-back] {
@@ -608,7 +577,7 @@ ul.unstyled .close {
 }
 
 .theme .hero-image {
-    margin: 0 auto;
+    margin: 0 auto 1.25em auto;
     overflow: hidden
 }
 
@@ -688,7 +657,7 @@ ul.unstyled .close {
 
 .theme-dius {
     background: #fafafa;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .theme-dius .container {
@@ -697,7 +666,7 @@ ul.unstyled .close {
 }
 
 .theme-dius input, .theme-dius textarea {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .theme-dius header {
@@ -713,11 +682,11 @@ ul.unstyled .close {
 }
 
 .theme-dius b {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .theme-dius h1, .theme-dius h3 {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #01a4f7;
     font-weight: 400;
     text-transform: none
@@ -732,26 +701,38 @@ ul.unstyled .close {
 }
 
 .theme-dius h4, .theme-dius h5 {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     text-transform: none
 }
 
+div.skills {
+  margin-bottom: 1em;
+}
+
 .theme-dius .skills ul li {
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
-    background-color: #01a4f7;
+    background-color: #0F1629;
     margin-right: 10px;
     margin-bottom: 10px;
-    border-radius: 0;
-    padding: 3px 7px;
+    border-radius: 0.125em;
+    padding: 0.2rem 0.5em;
     vertical-align: bottom;
-    color: #fff
+    color: #fff;
+}
+
+.theme-dius section.experiences {
+    padding-right: 2em;
+}
+
+.theme-dius .experience {
+    margin-bottom: 2em;
 }
 
 .theme-dius .certification > .name {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .theme-dius ul.dropdown-menu li {
@@ -764,23 +745,31 @@ ul.unstyled .close {
 }
 
 .theme-dius .big {
-    font-size: 31px;
-    line-height: 39px;
+    font-size: 3.98rem;
+    line-height: 1em;
     margin-bottom: 0
 }
 
 .theme-dius .biggish {
-    font-size: 20px;
+    font-size: 2.3rem;
     line-height: 27px;
-    margin-bottom: 10px
+    margin-bottom: 1em
 }
 
 .theme-dius .hero-text {
-    background-color: #f4f4f4
+    background-color: #E6F6FE;
+    padding: 0.5em;
+    padding-bottom: 1.25em;
+    border-radius: 0.2em;
+    margin-bottom: 1em;
 }
 
 .theme-dius .hero-text div, .theme-dius .hero-text textarea {
     padding: 17px 20px 7px !important
+}
+
+.theme-dius blockquote {
+    border-left-color: #00A4F7;
 }
 
 .theme-dius .portfolio-container .profiles a {
@@ -1068,31 +1057,31 @@ h4 small, h4 .small, h5 small, h5 .small, h6 small, h6 .small {
 }
 
 h1, .h1 {
-    font-size: 41px
+    font-size: 3.98rem
 }
 
 h2, .h2 {
-    font-size: 34px
+    font-size: 3.32rem
 }
 
 h3, .h3 {
-    font-size: 28px
+    font-size: 2.76rem
 }
 
 h4, .h4 {
-    font-size: 20px
+    font-size: 2.3rem
 }
 
 h5, .h5 {
-    font-size: 16px
+    font-size: 1.92rem
 }
 
 h6, .h6 {
-    font-size: 14px
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 1.25em;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 2px;
