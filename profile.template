@@ -141,7 +141,28 @@
               </div>
               {{/if}}
 
-              {{#if profile.certifications }}
+              {{#if profile.conferences}}
+              <div class="row">
+                <div class="col-md-12">
+                  <section class="conferences">
+                    <h3>Conferences</h3>
+                    {{#each profile.conferences}}
+                    <div class="well well-sm">
+                      <div>
+                        <p>{{this.title}}</p>
+                        <p>{{this.place}}</p>
+                      </div>
+                    </div>
+                    {{#unless @last}}
+                      <hr class="divider">
+                    {{/unless}}
+                    {{/each}}
+                  </section>
+                </div>
+              </div>
+              {{/if}}
+
+              {{#if profile.certifications}}
                 <div class="row">
                   <div class="col-md-12">
                     <section class="certifications">

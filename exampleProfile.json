@@ -71,6 +71,16 @@
       ]
     }
   ],
+  "conferences": [
+    {
+      "title": "2021 AWS Machine Learning Summit",
+      "place": "Sydney"
+    },
+    {
+      "title": "2021 AWS Summit Online Australia and New Zealand",
+      "place": "Online"
+    }
+  ],
   "education": [
     {
       "place": "University of Design",
