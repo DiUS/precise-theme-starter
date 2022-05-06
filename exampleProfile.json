@@ -2,7 +2,7 @@
   "about": {
     "name": "Alexa O'Keefe",
     "title": "Designer",
-    "bio": "Odio voluptate necessitatibus. Omnis amet asperiores maiores est voluptate. Ad voluptas consequatur atque ut est id id. Eveniet qui exercitationem cumque dignissimos. Enim et officiis sunt. Repellat quos est quas earum sed consequatur pariatur.Pariatur eveniet illum. Sunt quis excepturi quasi. Veritatis ut ipsa. Excepturi in fugit nostrum deleniti. Soluta quo qui non. Quisquam voluptatibus incidunt ut dolorum dolores. Doloremque saepe unde aut. Aut voluptatem perspiciatis.",
+    "bio": "Odio voluptate necessitatibus. Omnis amet asperiores maiores est voluptate. Ad voluptas consequatur atque ut est id id. Eveniet qui exercitationem cumque dignissimos.\n\nEnim et officiis sunt. Repellat quos est quas earum sed consequatur pariatur.\n\n> Pariatur eveniet illum. Sunt quis excepturi quasi.\n\nVeritatis ut ipsa. Excepturi in fugit nostrum deleniti. Soluta quo qui non. Quisquam voluptatibus incidunt ut dolorum dolores. Doloremque saepe unde aut. Aut voluptatem perspiciatis.",
     "passion": "Passionate storyteller. Constantly in motion. Eager traveler & cultural explorer.",
     "updated_at": "2015-01-30T03:33:57.750Z",
     "photo_url": "http://api.randomuser.me/portraits/women/54.jpg"
@@ -60,7 +60,7 @@
       "projects": [
         {
           "title": "Steve Service",
-          "description": "Et aut voluptate earum omnis similique. Cumque necessitatibus facere reprehenderit nobis. Praesentium est nobis aut voluptatem dolorem quasi. Perferendis rerum architecto dolor minus cupiditate.",
+          "description": "Et aut voluptate earum omnis similique. Cumque necessitatibus facere reprehenderit nobis.\n\n> Pariatur eveniet illum. Sunt quis excepturi quasi.\n\nPraesentium est nobis aut voluptatem dolorem quasi. Perferendis rerum architecto dolor minus cupiditate.",
           "period": "10 months"
         },
         {
@@ -69,6 +69,16 @@
           "period": "7 months"
         }
       ]
+    }
+  ],
+  "conferences": [
+    {
+      "title": "2021 AWS Machine Learning Summit",
+      "place": "Sydney"
+    },
+    {
+      "title": "2021 AWS Summit Online Australia and New Zealand",
+      "place": "Online"
     }
   ],
   "education": [
