@@ -78,7 +78,7 @@
                       <div class="col-md-12" style="position: relative;">
                         <h4>{{{md this.place}}}</h4>
                         <h5>{{{md this.role}}}</h5>
-                        <p>{{this.period}}</p>
+                        <p class="period">{{this.period}}</p>
                         {{#if this.description}}
                         <span>{{{md this.description}}}</span>
                         {{/if}}
